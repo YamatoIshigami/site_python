@@ -1,0 +1,188 @@
+body {
+    background: rgb(11, 11, 11);
+}
+
+aside {
+    float: left;
+    background: black;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: white;
+    border-right: 5px solid white;
+}
+
+aside img {
+    width: 180px;
+    float: left;
+}
+
+aside .logo {
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    right: 40px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0);
+    transition: transform .2s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0);
+    transform: scale(1.1);
+}
+
+main .features {
+    float: left;
+    color: rgb(255, 255, 255);
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+main .features h1 {
+    font-size: 50px;
+    position: relative;
+    left: 40px;
+    margin-bottom: 60px;
+
+}
+
+main .features p {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.alert-warning {
+    float: left;
+    clear: both;
+    width: 400px;
+    margin: 20px 34%;
+    text-align: left;
+    
+}
+
+form {
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
+}
+
+
+
+.features h1 {
+    text-align: center;
+
+}
+
+.features h3 {
+    position: relative;
+    left: 35px;
+    
+}
+
+.features p {
+    margin-top: 20px;
+    position: relative;
+    left: 33px;
+    text-align: left;   
+}
+.features a {
+    margin-top: 20px;
+    position: relative;
+    left: 25px;
+}
+
+h4 {
+    position: relative;
+    top: 60px;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+h5 {
+    position: relative;
+    top: 1px;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+h6 {
+    position: relative;
+    top: 10px;
+    font-size: 30px;
+    margin-top: 60px;
+    color: white;
+    text-align: center;
+}
+
+.middle {
+    position: relative;
+    left: 250px;
+    top: 200px;
+    float: left;
+    margin: 20px;
+    padding: 90px 30px;
+    background: rgba(255, 255, 255, 0.281);
+}
+
+.middle button.btn {
+    background: none;
+    border: 2px solid #000000;
+    color: #ffffff;
+    font-size: 18px;
+    position: relative;
+    top: 70px;
+    left: 160px;
+    font-family: "montserrat", sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    min-width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+}
+
+.middle button.btn:hover {
+    color: rgb(0, 0, 0);
+}
+.middle button.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+.middle button.btn1::before{
+    transform: scaleX(0);
+}
+.middle button.btn1:hover::before{
+    transform: scaleX(1);
+}
